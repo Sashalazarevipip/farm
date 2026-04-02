@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семейная ферма Яваевых — натуральные продукты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: #fef9e8;
+            color: #2d3e2b;
+            line-height: 1.45;
+        }
+
+        .site {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+        }
+
+        .top-bar {
+            background: linear-gradient(105deg, #2b5e2b 0%, #4c8b3c 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .logo-block {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            max-height: 60px;
+            width: auto;
+            border-radius: 12px;
+            background: white;
+            padding: 4px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        .logo-sub {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover {
+            border-bottom-color: #f9d56e;
+        }
+
+        .section {
+            padding: 2.5rem 2rem;
+            border-bottom: 1px solid #e0e8d9;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2b5e2b;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-title i {
+            font-size: 1.8rem;
+            color: #e8a735;
+        }
+
+        .grid-2col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .direction-card {
+            background: #faf7e6;
+            border-radius: 28px;
+            padding: 1.4rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border-left: 6px solid #e8a735;
+        }
+        .direction-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2b5e2b;
+            margin-bottom: 8px;
+        }
+
+        .advantage-list {
+            list-style: none;
+            padding: 0;
+        }
+        .advantage-list li {
+            margin: 0.8rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+        .advantage-list li i {
+            color: #e8a735;
+            width: 24px;
+        }
+
+        .badge {
+            background: #e8a73520;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #2b5e2b;
+            margin-right: 6px;
+        }
+
+        .contact-block {
+            background: #f1f5e8;
+            border-radius: 28px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        footer {
+            background: #1e3a1e;
+            color: #d4e6c3;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 750px) {
+            .logo-area { flex-direction: column; align-items: flex-start; }
+            .section { padding: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="site">
+    <div class="top-bar">
+        <div class="logo-area">
+            <div class="logo-block">
+                <img src="logo.webp" alt="Логотип Семейная ферма Яваевых" class="logo-img" onerror="this.style.display='none'">
+                <div>
+                    <div class="logo-text">Семейная ферма Яваевых</div>
+                    <div class="logo-sub">натуральные продукты с заботой о доме</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#about">О нас</a>
+                <a href="#directions">Направления</a>
+                <a href="#why">Почему мы</a>
+                <a href="#legal">ОПФ и поддержка</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="section-title"><i class="fas fa-tractor"></i> О хозяйстве</div>
+        <p style="font-size:1.1rem; max-width: 90%;">«Семейная ферма Яваевых» — крестьянско-фермерское хозяйство полного цикла. Мы выращиваем овощи и ягоды, держим коров и кур, перерабатываем молоко в творог, сметану и масло. Всё — вручную с душой, без лишней химии. Наша цель — свежие, полезные продукты для соседей и местных магазинов.</p>
+    </div>
+
+    <div id="directions" class="section">
+        <div class="section-title"><i class="fas fa-seedling"></i> Направления хозяйства</div>
+        <div class="grid-2col">
+            <div class="col">
+                <div class="direction-card">
+                    <div class="direction-name"><i class="fas fa-plant-wilt"></i> Овощеводство</div>
+                    <p>Баклажаны, кабачки, перец, огурцы, помидоры. Тепличное выращивание для раннего урожая.</p>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-name"><i class="fas fa-strawberry"></i> Ягодный промысел</div>
+                    <p>Клубника: ранняя в теплицах и летняя в открытом грунте. Высокомаржинальная культура.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="direction-card">
+                    <div class="direction-name"><i class="fas fa-cow"></i> Животноводство</div>
+                    <p>Дойные коровы (свежее молоко круглый год) и куры (яйцо, мясо). Натуральные корма.</p>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-name"><i class="fas fa-cheese"></i> Молочное производство</div>
+                    <p>Переработка молока в сметану, творог, масло. Выше прибыль, чем от продажи сырого молока.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="why" class="section">
+        <div class="section-title"><i class="fas fa-chart-line"></i> Почему это перспективно</div>
+        <div class="grid-2col">
+            <div class="col">
+                <ul class="advantage-list">
+                    <li><i class="fas fa-check-circle"></i> Продукты первой необходимости — спрос всегда.</li>
+                    <li><i class="fas fa-check-circle"></i> Ранняя клубника даёт высокую маржинальность.</li>
+                    <li><i class="fas fa-check-circle"></i> Переработка молока увеличивает прибыль в разы.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="advantage-list">
+                    <li><i class="fas fa-check-circle"></i> Короткая логистика до местного рынка и магазинов.</li>
+                    <li><i class="fas fa-check-circle"></i> Государственная поддержка для фермеров.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="legal" class="section">
+        <div class="section-title"><i class="fas fa-file-signature"></i> Организационно-правовая форма</div>
+        <p><strong>Мой выбор — ИП в качестве главы Крестьянского (фермерского) хозяйства (ИП – глава КФХ).</strong></p>
+        <p>Почему не ООО или АО? ООО требует уставного капитала, сложной отчётности, устава; АО — для крупного бизнеса. Обычный ИП без статуса КФХ не получает землю и гранты. А КФХ даёт:</p>
+        <div class="grid-2col" style="margin-top: 1rem;">
+            <div class="col">
+                <ul class="advantage-list">
+                    <li><i class="fas fa-ruble-sign"></i> Единый сельхозналог (6% с разницы доходов и расходов).</li>
+                    <li><i class="fas fa-hand-holding-usd"></i> Гранты «Агростартап» до 6 млн рублей.</li>
+                    <li><i class="fas fa-map-marked-alt"></i> Земля из фонда перераспределения в льготную аренду.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="advantage-list">
+                    <li><i class="fas fa-credit-card"></i> Льготные кредиты для фермеров (1–5% годовых).</li>
+                    <li><i class="fas fa-users"></i> Можно нанимать работников без лишней бюрократии.</li>
+                    <li><i class="fas fa-balance-scale"></i> Ответственность — да, личная, но для небольшой фермы риск управляем.</li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; background:#f1f5e8; padding: 10px 16px; border-radius: 24px;"><i class="fas fa-tractor"></i> <strong>Господдержка:</strong> субсидии на корма, удобрения, ГСМ; гранты начинающим фермерам.</p>
+    </div>
+
+    <div id="contacts" class="section">
+        <div class="section-title"><i class="fas fa-phone-alt"></i> Контакты</div>
+        <div class="contact-block">
+            <p><i class="fas fa-info-circle"></i> Для связи с нами используйте любой удобный способ — мы ответим.</p>
+            <p><i class="fas fa-envelope"></i> Электронная почта и телефон указаны в профиле фермы.</p>
+            <p style="margin-top: 15px;"><strong>Реквизиты предоставляются по запросу.</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Семейная ферма Яваевых (КФХ) — свежие продукты с собственной фермы.<br>
+        Принимаем заказы от магазинов, столовых и частных покупателей.
+    </footer>
+</div>
+</body>
+</html>
